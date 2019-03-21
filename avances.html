@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Avances :: Club de Ganadores</title>
+	<link href="img/favicon.png" rel="icon">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/stilos.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+	
+	
+	<!-- Font Jokeyone -->
+	<link rel="stylesheet" href="webfonts/jockeyone/stylesheet.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="mecanica.html">MECÁNICA</a>
+                </li>
+                <li>
+                    <a href="catalogo.html">CATÁLOGO</a>
+                </li>
+                <li>
+                    <a href="avances.html">AVANCES</a>
+                </li>
+                <li>
+                    <a href="#" onclick="openContact()" class="contacto" >CONTACTO</a>
+                </li>
+				<li>
+                   <a href="login.html"  >SALIR</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <nav id="sidebar2">
+            <div id="dismiss2">
+                <i class="fas fa-times"></i>
+            </div>
+            
+            <ul class="sidebar2_subt">
+                <li><h1>Categorías</h1></li>
+                <li><a href="catalogo.html">Ver todo</a></li>
+            </ul>
+
+            <div class="cont_checks">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1"> (51) Aventura y Deporte</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2"> (44) Para él</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    <label class="form-check-label" for="defaultCheck3"> (29) Electrónicos</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                    <label class="form-check-label" for="defaultCheck4"> (18) Para ella</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                    <label class="form-check-label" for="defaultCheck5"> (87) Herramientas</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                    <label class="form-check-label" for="defaultCheck6"> (32) Hogar</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                    <label class="form-check-label" for="defaultCheck7"> (69) Niños</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+                    <label class="form-check-label" for="defaultCheck8"> (19) Relojes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+                    <label class="form-check-label" for="defaultCheck9"> (89) Viajes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                    <label class="form-check-label" for="defaultCheck10"> (54) Otros</label>
+                </div>
+            </div>
+
+            <ul class="sidebar2_subt">
+                <li><h1>Rango de puntos</h1></li>
+            </ul>
+            
+            <div class="slidecontainer">
+                <div class="float-left puntaje_ref"><p>0 pts.</p></div>
+                <div class="float-right puntaje_ref"><p>100 pts.</p></div>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                <p><span id="demo"></span> pts.</p>
+                <a href="catalogo.html" class="btn_accion_orange">APLICAR FILTRO</a>
+            </div>
+            
+
+
+        </nav>
+
+        
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar row fixed-top navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+
+                    <div class="float-left">
+                        <button type="button" id="sidebarCollapse" class="menu_btn d-md-none">☰</button>
+                       <a id="tipologo" class="navbar-brand" href="index.html"><!--<img src="img/logo_pepsico_b.png" width="60" alt="logo_pepsico"/>--> 
+							<img src="img/club_ganadar_fullcolor.png" class="logo_fullcolor" alt="logo_club"/> 
+							
+							<!--<span>Club de Ganadores</span>--></a>
+                    </div>
+					
+					<div class="float-left d-none d-md-block">
+					<ul class="top_menu_right text-right">
+							<li><a href="index.html" >INICIO</a></li>
+                            <li><a href="mecanica.html" >MECÁNICA</a></li>
+							<li><a href="catalogo.html" >CATÁLOGO</a></li>
+							<li><a href="avances.html" >AVANCES</a></li>
+							<li><a href="#" onclick="openContact()" class="contacto" >CONTACTO</a></li>
+                            <li><a href="login.html" >SALIR</a></li> 
+                        </ul>
+					</div>
+					
+                    
+                    <div class="float-right">
+                        <ul class="iconos_der top_menu_right text-right">
+                            <li><a onclick="openSearch()" class="buscador"><i class="fa fa-search"></i></a></li>
+                            <li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i> <span class="badge">10</span></a>
+							
+								
+								
+			  <div id="carto" class="cart_container dropdown-menu">
+              <div class="shopping-cart ">
+                <div class="row">
+                    <div class="col-md-3 xs-img"><img src="img/catalogo/cat4.jpg" width="85" class="img-responsive" /></div>
+                    <div class="col-md-7 xs-desc">
+                        <span class="item-name">Nombre del artículo</span>
+                        <span class="item-sku">SKU</span>
+                        <span class="item-points">999,999 <span class="color_naranja">pts</span></span>
+                    </div>
+                    <div class="col-md-2 xs-delete text-right"><a href="" class="btn_delete">X</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 xs-img"><img src="img/catalogo/cat4.jpg" width="85" class="img-responsive" /></div>
+                    <div class="col-md-7 xs-desc">
+                        <span class="item-name">Nombre del artículo</span>
+                        <span class="item-sku">SKU</span>
+                        <span class="item-points">999,999 <span class="color_naranja">pts</span></span>
+                    </div>
+                    <div class="col-md-2 xs-delete text-right"><a href="" class="btn_delete">X</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 xs-img"><img src="img/catalogo/cat4.jpg" width="85" class="img-responsive" /></div>
+                    <div class="col-md-7 xs-desc">
+                        <span class="item-name">Nombre del artículo</span>
+                        <span class="item-sku">SKU</span>
+                        <span class="item-points">999,999 <span class="color_naranja">pts</span></span>
+                    </div>
+                    <div class="col-md-2 xs-delete text-right"><a href="" class="btn_delete">X</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+
+                <a href="carrito.html" class="button btn btn-default btn-lg">VER CARRITO</a>
+              </div> <!--end shopping-cart -->
+            </div> <!--end container -->
+                       
+                  				
+							</li>
+                            <li><button type="button" id="sidebarCollapse2" class="menu_btn"><i class="fa fa-sliders-h"></i></button></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+           
+ 				<div id="row_user_nameniv" class="row">
+					<div class="container cont_user_nameniv">
+                    <div class="col-md-12">
+                        <ul class="">
+                            <li><p>Bienvenido, Luisito de la Torre Rey - Nivel DIAMANTE</p></li>
+                        </ul>
+                    </div>
+				 </div>
+						
+                </div>
+
+            
+
+            <div class="container">
+
+                <div id="search" class="overlay">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+                  <div class="overlay-content">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col"></div>
+                        <div class="col-md-6">
+							<img src="img/logo_animated.gif" alt="logo_overlay" width="150" style="margin-bottom: 10px;" />
+							<br/>
+							
+                          <div class="input-group mb-3">
+                            <input id="buscador" type="text" class="form-control btn-lg buscador" placeholder="Buscar...">
+                            <div class="input-group-append">
+                              <button class="btn-outline-secondary buscador" type="button"><i class="fa fa-search"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+				
+				
+				
+				<div id="contacto" class="overlay">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeContact()">&times;</a>
+                  <div class="overlay-content">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col"></div>
+                        <div class="col-md-8">
+							
+                          <img src="img/logo_animated.gif" alt="logo_overlay" width="150" style="margin-bottom: 10px;" />
+								<h1>Envía tus comentarios</h1>
+							<br/>
+						   <div class="input-group mb-3">
+                            <input id="contacto_in" type="text" class="form-control btn-lg buscador" placeholder="*Nombre:">
+                            <input id="" type="text" class="form-control btn-lg buscador" placeholder="Asunto:">
+                          </div>
+							 <div class="input-group mb-3">
+                            <input id="" type="text" class="form-control btn-lg buscador" placeholder="Télefono de contacto:">
+                            <input id="" type="text" class="form-control btn-lg buscador" placeholder="E-mail:">
+                          </div>
+							<div class="input-group mb-3">
+                            <input id="" type="text" class="form-control btn-lg buscador" placeholder="Mensaje:">
+                            
+                          </div>
+                        <br/>
+						<div class="col-5 float-right" style="margin: 0px 14px;">
+							<a href="#" class="btn btn-default btn-lg m_top15">ENVIAR MENSAJE</a>
+							</div>
+							
+						  
+						  </div>
+                        <div class="col"></div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+				
+				
+				
+				<div id="prioridades_det" class="overlay">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closePriorid()">&times;</a>
+                  <div class="overlay-content">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col"></div>
+                        <div class="col-md-8">
+							
+                          <img src="img/logo_animated.gif" alt="logo_overlay" width="150" style="margin-bottom: 10px;" />
+										<h1>PRIORIDADES</h1>
+							
+						   <div class="input-group mb-3">
+                          
+							<p class="objetrimes">Promociones del trimestre</p>
+							   
+							<table class="table table-borderless" >
+                        
+                        <tbody>
+                            <tr class="border-bottom">
+                               
+                                <td class="text-left " ><p class="" >Promoción sonric</p></td>
+								
+								<td class="text-right" > <p class="" >200 pts</p></td>
+				
+                            </tr>
+							<tr class="border-bottom">
+                               
+                                <td class="text-left " ><p class="" >Promoción Sabritas</p></td>
+								
+								<td class="text-right" > <p class="" >1,250 pts</p></td>
+				
+                            </tr>
+							<tr class="border-bottom">
+                               
+                                <td class="text-left " ><p class="" >Promoción Quaker</p></td>
+								
+								<td class="text-right" > <p class="" >300 pts</p></td>
+				
+                            </tr>
+							
+                           
+                        </tbody>
+                        </table>
+							
+							</div>
+							
+							
+                        <br/>
+						<a class="benlace " href="javascript:void(0)" onclick="closePriorid()"> <button type="button" class="btn btn-default btn-lg m_top15" >ACEPTO</button></a>
+							
+						  
+						  </div>
+                        <div class="col"></div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+				
+				
+				
+				<div id="detallado_ind" class="overlay">
+                  <!--<a href="javascript:void(0)" class="closebtn" onclick="closeDetalladoInd()">&times;</a>-->
+                  <div class="overlay-content">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col"></div>
+                        <div class="col-md-8">
+							
+                          <img src="img/logo_animated.gif" alt="logo_overlay" width="150" style="margin-bottom: 10px;" />
+								<h1>INDIVIDUAL</h1>
+							
+						   <div class="input-group mb-3">
+                          
+							<p class="objetrimes">Objetivo del trimestre: $1,000</p>
+							   
+							<table class="table table-borderless" >
+                        
+                        <tbody>
+                            <tr class="border-bottom">
+                               
+                                <td class="text-left " ><p class="" >Agosto</p></td>
+								
+								<td class="text-right" > <p class="" >$200</p></td>
+				
+                            </tr>
+							<tr class="border-bottom">
+                               
+                                <td class="text-left " ><p class="" >Septiembre</p></td>
+								
+								<td class="text-right" > <p class="" >$250</p></td>
+				
+                            </tr>
+							<tr class="border-bottom">
+                               
+                                <td class="text-left " ><p class="" >Octubre</p></td>
+								
+								<td class="text-right" > <p class="" >$300</p></td>
+				
+                            </tr>
+							
+                           
+                        </tbody>
+                        </table>
+							
+							</div>
+							
+							
+                        <br/>
+						<a class="benlace " href="javascript:void(0)" onclick="closeDetalladoInd()"> <button type="button" class="btn btn-default btn-lg m_top15" >ACEPTO</button></a>
+							
+						  
+						  </div>
+                        <div class="col"></div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+				
+				
+				
+				<div id="detallado_bode" class="overlay">
+                  <!--<a href="javascript:void(0)" class="closebtn" onclick="closeDetalladoBode()">&times;</a>-->
+                  <div class="overlay-content">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col"></div>
+                        <div class="col-md-8">
+							
+                          <img src="img/logo_animated.gif" alt="logo_overlay" width="150" style="margin-bottom: 10px;" />
+								<h1>BODEGA</h1>
+						
+						   <div class="input-group mb-3">
+                          
+							<p class="objetrimes">Objetivo del trimestre: $10,000</p>
+							   
+							<table class="table table-borderless" >
+                        
+                        <tbody>
+                            <tr class="border-bottom">
+                               
+                                <td class="text-left " ><p class="" >Agosto</p></td>
+								
+								<td class="text-right" > <p class="" >$2,500</p></td>
+				
+                            </tr>
+							<tr class="border-bottom">
+                               
+                                <td class="text-left " ><p class="" >Septiembre</p></td>
+								
+								<td class="text-right" > <p class="" >$1,250</p></td>
+				
+                            </tr>
+							<tr class="border-bottom">
+                               
+                                <td class="text-left " ><p class="" >Octubre</p></td>
+								
+								<td class="text-right" > <p class="" >$3,000</p></td>
+				
+                            </tr>
+							
+                           
+                        </tbody>
+                    </table>
+							
+							</div>
+							
+							
+                        <br/>
+						<a class="benlace " href="javascript:void(0)" onclick="closeDetalladoBode()"> <button type="button" class="btn btn-default btn-lg m_top15" >ACEPTO</button></a>
+							
+						  
+						  </div>
+                        <div class="col"></div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+				
+				
+				
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="breadcrum">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li>/</li>
+                            <li>Avances</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+    <div class="container">
+        <div class="row">
+            <div id="" class="estado_cuenta col-md-12 col-sm-12 col-xs-12">
+                <h1>Avance trimestral</h1>
+            </div>           
+        </div>
+        <div class="row">
+           
+               
+			
+				<div id="div_datosconf" class="col-md-4">
+				
+					<div  class="div_misdire_3 color_azul_borde">
+						
+							<p class="text-center"><strong>Resumen de puntos generales</strong></p> 
+						
+						<hr>
+						
+						<p class="text-center color_azul" style="font-size: 24px;" ><strong>4000 <span class="color_naranja">pts</span></strong></p> 
+						<p class="text-center" > Tus puntos <span>08/08/2108</span></p> 
+						
+						<hr>
+						<table class="table table-borderless" style="margin-bottom: 2px;">
+                        
+                        <tbody>
+                            <tr class="border-bottom">
+                                <td>Puntos disponibles</td>
+                                <td class="text-right"> <p class="points_txt"><strong>600 <span>pts</span></strong></p></td>
+                            </tr>
+							
+                            <tr class="border-bottom">
+                                <td>Puntos totales</td>
+                                <td class="text-right"> <p class="points_txt"><strong>300 <span>pts</span></strong></p></td>
+                            </tr>
+							
+                            <tr class="">
+                                <td>Puntos canjeados</td>
+                                <td class="text-right"> <p class="points_txt"><strong>200 <span>pts</span></strong></p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+				
+				</div>
+					
+				<div  class="div_misdire_3 color_naranja_borde  ">
+				<p class="text-center"><strong>Puntos</strong></p> 
+				<hr>
+					
+					<div class="row">					
+					<div class="col-md-12 div_misdire_4 text-center">
+						
+						<table class="table table-borderless" style="margin-bottom: 2px;">
+                        
+                        <tbody>
+                            <tr>
+                               
+                                <td class="border-right" style="width: 105px;">
+									<p class="txt_individ" >Individual</p>
+								</td>
+								
+								<td class="text-center" > 
+									<p><img src="img/puntos_ico_indi.jpg"  width="80" /></p>
+								</td>
+								
+								<td class="border-left">
+									<p class="points_txt" >100 <span>pts</span></p> 
+									<p class="color_azul" ><strong>75%</strong></p></td>
+								
+								
+                            </tr>
+							
+                           
+                        </tbody>
+                    </table>
+						
+					</div>
+					
+					<div class="col-md-12 div_misdire_4 bg_hover text-center">
+						
+						
+						<table class="table table-borderless" style="margin-bottom: 2px;">
+                        
+                        <tbody>
+                            
+							<tr class="clickable-row">
+                              
+                                <td class="text-center border-right" style="width: 105px;">
+									<p class="txt_bodega" >Prioridades <a>VER</a></p>
+								</td>
+								
+								<td class="text-center" > 
+									<p class="txt_imgicoprio" ><img src="img/puntos_ico_list.png"  width="60" /></p></td>
+								
+								<td class="text-right border-left" style="padding: 11px">
+									<p class="points_txt" >100 <span>pts</span></p> 
+									<p class="color_azul" ><strong>75%</strong></p>
+								</td>
+								
+								
+                            </tr>
+							
+                           
+                        </tbody>
+                    </table>
+					
+						
+						
+					</div>
+					
+					<div class="col-md-12 div_misdire_4 text-center">
+						
+						
+						<table class="table table-borderless" style="margin-bottom: 2px;">
+                        
+                        <tbody>
+                            <tr class="">
+                               
+                                <td class="text-center border-right"  style="width: 105px;">
+									<p class="txt_adicional" >Incentivos<br> por nivel</p></td>
+								
+								<td class="text-center" > 
+									<p><img src="img/puntos_ico_boni.jpg"  width="80" /></p>
+								</td>
+								
+								<td class="text-right border-left" >
+									<p class="points_txt" >100 <span>pts</span></p>
+									<p class="color_azul" ><strong>75%</strong></p>
+								</td>
+								
+								
+                            </tr>
+							
+                           
+                        </tbody>
+                    </table>
+					
+			
+					</div>
+					
+					
+					<!--<div class="col-md-6 div_misdire_4 text-center">
+							
+						<p class="points_txt">100 <span>pts</span></p>
+							<p><img src="img/puntos_ico_boni.jpg"  width="80" /></p>
+							<p class="color_azul"><strong>75%</strong></p>
+							<p>Individual</p>
+						
+					</div>-->
+					
+		
+				
+					
+				        </div>
+					</div>
+
+				
+				</div>
+				
+				<div id="div_indivi_gra" class="col-md-4 ">
+					
+				<div  class="div_porcentaj">
+				
+						<p class="text-center"><strong>Individual</strong></p> 
+				<hr>
+						<div  class="col-md-12 div_vidoani">
+               			
+						
+						<img src="img/avance_individual.gif" class="anima_porcen" />
+						
+						</div>	
+					
+					<p class="text-center"><a href="#"  onclick="openDetalladoInd()" class="btn_vdetalle">VER DETALLE</a></p>
+					
+				
+						<div class="col-md-12">
+						
+                		<div class="progress orange" data-percentage="50">
+                <span class="progress-left">
+                    <span class="progress-bar"  ></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar" ></span>
+                </span>
+                <div class="progress-value"   >50%</div>
+            </div>
+                		<br>
+						
+							
+            			</div>
+					
+					
+					<table class="table table-borderless">
+                        
+                        <tbody>
+                            <tr class="border-bottom">
+                                <td>Ojetivo</td>
+                                <td class="text-right color_azul"> <strong>$1,000</strong></td>
+                            </tr>
+							
+                          
+							
+                            <tr class="">
+                                <td>Venta</td>
+                                <td class="text-right color_azul"> <strong>$750</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+						
+						
+					</div>
+					
+				</div>
+				
+				<div id="div_bodeg_gra" class="col-md-4 ">
+					
+				<div  class="div_porcentaj">
+					
+				        <p class="text-center"><strong>Bodega</strong></p> 
+				<hr>
+						<div  class="col-md-12 div_vidoani">
+               			
+						<img src="img/avance_bodega.gif" class="anima_porcen" />
+						
+						
+						</div>	
+					
+					<p class="text-center"><a href="#" onclick="openDetalladoBode()" class="btn_vdetalle" >VER DETALLE</a></p>	
+					
+				
+						<div class="col-md-12">
+						
+                	   <div class="progress blue" data-percentage="50">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">90%</div>
+            </div>
+                		<br>
+
+            			</div>
+					
+					<table class="table table-borderless">
+                        
+                        <tbody>
+                            <tr class="border-bottom">
+                                <td>Ojetivo</td>
+                                <td class="text-right color_azul"> <strong>100</strong></td>
+                            </tr>
+							
+                          
+							
+                            <tr class="">
+                                <td>Venta</td>
+                                <td class="text-right color_azul"> <strong>50</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+						
+						
+					</div>
+					
+				</div>
+			
+				
+           </div>
+          
+          
+          <div class="row">
+          
+          <div id="" class="estado_cuenta2 col-md-12 col-sm-12 col-xs-12">
+                <h1>Detalle histórico</h1>
+            </div>
+                  
+                  <div id="" class="col-md-6">
+					  
+					  <div class="slider2">
+  							<input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+  							<input type="radio" name="slider" title="slide2" class="slider__nav"/>
+  							<input type="radio" name="slider" title="slide3" class="slider__nav"/>
+						  <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+  							
+  							<div class="slider__inner">
+    								<div class="slider__contents">
+										
+										<div  class="div_misdire_6">
+											<p class="text-center"><strong>Individual</strong></p> 
+										<hr>
+											<p class="text-center trimestre_txt">Verano<br> <span>AGO-SEP-OCT</span></p> 
+										<hr>		
+		
+										<table class="table table-borderless">
+                        
+                       					 <tbody>
+                           					 <tr class="border-bottom">
+                                				<td>Ojetivo</td>
+                                				<td class="text-right color_azul"> <strong>$1000</strong></td>
+                            				</tr>
+							
+											<tr class="border-bottom">
+                                				<td>Venta</td>
+                                				<td class="text-right color_azul"> <strong>$750</strong></td>
+                           					</tr>
+                
+                            				<tr class="">
+                                				<td>Porcentaje</td>
+                               					<td class="text-right color_azul"> <strong>75%</strong></td>
+                           					</tr>
+                       					 </tbody>
+                    					</table>
+				
+										</div>
+		
+    							</div>
+    					<div class="slider__contents">
+							<div  class="div_misdire_6">
+											<p class="text-center"><strong>Individual</strong></p> 
+										<hr>
+											<p class="text-center trimestre_txt">Invierno<br> <span>AGO-SEP-OCT</span></p> 
+										<hr>		
+		
+										<table class="table table-borderless">
+                        
+                       					 <tbody>
+                           					 <tr class="border-bottom">
+                                				<td>Ojetivo</td>
+                                				<td class="text-right color_azul"> <strong>$1000</strong></td>
+                            				</tr>
+							
+											<tr class="border-bottom">
+                                				<td>Venta</td>
+                                				<td class="text-right color_azul"> <strong>$750</strong></td>
+                           					</tr>
+                
+                            				<tr class="">
+                                				<td>Porcentaje</td>
+                               					<td class="text-right color_azul"> <strong>75%</strong></td>
+                           					</tr>
+                       					 </tbody>
+                    					</table>
+				
+										</div>
+		
+   						 </div>
+								
+						<div class="slider__contents">
+							<div  class="div_misdire_6">
+											<p class="text-center"><strong>Individual</strong></p> 
+										<hr>
+											<p class="text-center trimestre_txt">Primavera<br> <span>AGO-SEP-OCT</span></p> 
+										<hr>		
+		
+										<table class="table table-borderless">
+                        
+                       					 <tbody>
+                           					 <tr class="border-bottom">
+                                				<td>Ojetivo</td>
+                                				<td class="text-right color_azul"> <strong>$1000</strong></td>
+                            				</tr>
+							
+											<tr class="border-bottom">
+                                				<td>Venta</td>
+                                				<td class="text-right color_azul"> <strong>$750</strong></td>
+                           					</tr>
+                
+                            				<tr class="">
+                                				<td>Porcentaje</td>
+                               					<td class="text-right color_azul"> <strong>75%</strong></td>
+                           					</tr>
+                       					 </tbody>
+                    					</table>
+				
+										</div>
+		
+   								 </div>	
+								
+							<div class="slider__contents">
+							<div  class="div_misdire_6">
+											<p class="text-center"><strong>Individual</strong></p> 
+										<hr>
+											<p class="text-center trimestre_txt">Prioridades<br> <span>AGO-SEP-OCT</span></p> 
+										<hr>		
+		
+										<table class="table table-borderless">
+                        
+                       					 <tbody>
+                           					 <tr class="border-bottom">
+                                				<td>Promoción Sonrics</td>
+                                				<td class="text-right color_azul"> <strong>1000</strong></td>
+                            				</tr>
+							
+											<tr class="border-bottom">
+                                				<td>Promoción Sabritas</td>
+                                				<td class="text-right color_azul"> <strong>750</strong></td>
+                           					</tr>
+                
+                            				<tr class="">
+                                				<td>Promoción Quaker</td>
+                               					<td class="text-right color_azul"> <strong>300</strong></td>
+                           					</tr>
+                       					 </tbody>
+                    					</table>
+				
+										</div>
+		
+   								 </div>		
+								
+    
+    
+ 						 </div>
+					</div>
+				
+				</div>
+         
+         
+                 <div id="" class="col-md-6">
+					 
+					 
+					 
+					 <div class="slider3">
+  							<input type="radio" name="slider2" title="slide5" checked="checked" class="slider__nav2"/>
+  							<input type="radio" name="slider2" title="slide6" class="slider__nav2"/>
+  							<input type="radio" name="slider2" title="slide7" class="slider__nav2"/>
+						    <input type="radio" name="slider2" title="slide8" class="slider__nav2"/>
+  							
+  							<div class="slider__inner2">
+    								<div class="slider__contents2">
+										
+										<div  class="div_misdire_6">
+											<p class="text-center"><strong>Bodega</strong></p> 
+										<hr>
+											<p class="text-center trimestre_txt">Verano<br> <span>AGO-SEP-OCT</span></p> 
+										<hr>		
+		
+										<table class="table table-borderless">
+                        
+                       					 <tbody>
+                           					 <tr class="border-bottom">
+                                				<td>Ojetivo</td>
+                                				<td class="text-right color_azul"> <strong>$1000</strong></td>
+                            				</tr>
+							
+											<tr class="border-bottom">
+                                				<td>Venta</td>
+                                				<td class="text-right color_azul"> <strong>$750</strong></td>
+                           					</tr>
+                
+                            				<tr class="">
+                                				<td>Porcentaje</td>
+                               					<td class="text-right color_azul"> <strong>75%</strong></td>
+                           					</tr>
+                       					 </tbody>
+                    					</table>
+				
+										</div>
+		
+    							</div>
+    					<div class="slider__contents2">
+							<div  class="div_misdire_6">
+											<p class="text-center"><strong>Bodega</strong></p> 
+										<hr>
+											<p class="text-center trimestre_txt">Invierno<br> <span>AGO-SEP-OCT</span></p> 
+										<hr>		
+		
+										<table class="table table-borderless">
+                        
+                       					 <tbody>
+                           					 <tr class="border-bottom">
+                                				<td>Ojetivo</td>
+                                				<td class="text-right color_azul"> <strong>$1000</strong></td>
+                            				</tr>
+							
+											<tr class="border-bottom">
+                                				<td>Venta</td>
+                                				<td class="text-right color_azul"> <strong>$750</strong></td>
+                           					</tr>
+                
+                            				<tr class="">
+                                				<td>Porcentaje</td>
+                               					<td class="text-right color_azul"> <strong>75%</strong></td>
+                           					</tr>
+                       					 </tbody>
+                    					</table>
+				
+										</div>
+		
+   						 </div>
+								
+						<div class="slider__contents2">
+							<div  class="div_misdire_6">
+											<p class="text-center"><strong>Bodega</strong></p> 
+										<hr>
+											<p class="text-center trimestre_txt">Primavera<br> <span>AGO-SEP-OCT</span></p> 
+										<hr>		
+		
+										<table class="table table-borderless">
+                        
+                       					 <tbody>
+                           					 <tr class="border-bottom">
+                                				<td>Ojetivo</td>
+                                				<td class="text-right color_azul"> <strong>$1000</strong></td>
+                            				</tr>
+							
+											<tr class="border-bottom">
+                                				<td>Venta</td>
+                                				<td class="text-right color_azul"> <strong>$750</strong></td>
+                           					</tr>
+                
+                            				<tr class="">
+                                				<td>Porcentaje</td>
+                               					<td class="text-right color_azul"> <strong>75%</strong></td>
+                           					</tr>
+                       					 </tbody>
+                    					</table>
+				
+										</div>
+		
+   								 </div>	
+								
+								<div class="slider__contents2">
+							<div  class="div_misdire_6">
+											<p class="text-center"><strong>Bodega</strong></p> 
+										<hr>
+											<p class="text-center trimestre_txt">Prioridades<br> <span>AGO-SEP-OCT</span></p> 
+										<hr>		
+		
+										<table class="table table-borderless">
+                        
+                       					 <tbody>
+                           					 <tr class="border-bottom">
+                                				<td>Promoción Sonrics</td>
+                                				<td class="text-right color_azul"> <strong>1000</strong></td>
+                            				</tr>
+							
+											<tr class="border-bottom">
+                                				<td>Promoción Sabritas</td>
+                                				<td class="text-right color_azul"> <strong>750</strong></td>
+                           					</tr>
+                
+                            				<tr class="">
+                                				<td>Promoción Quaker</td>
+                               					<td class="text-right color_azul"> <strong>500</strong></td>
+                           					</tr>
+                       					 </tbody>
+                    					</table>
+				
+										</div>
+		
+   								 </div>	
+    
+    
+ 						 </div>
+					</div>
+				
+					
+					
+				
+				
+				</div>
+          
+          
+           </div>
+           
+           
+           <div class="row">
+           
+           
+           <div id="historico_canje" class="col-md-12 ">
+					
+				<div  class="div_artifina">
+					
+				<p class="text-center"><strong>Canjes</strong></p> <br>
+		
+				
+				<table class="table">
+  					<thead>
+   							 <tr>
+      							<th scope="col">Folio de canje</th>
+      							<th scope="col" class="text-left">Fecha de canje</th>
+      							<th scope="col" class="text-left">Dirección de envío</th>
+      							<th scope="col" class="text-left">Puntos</th>
+								 <th scope="col" class="text-left">Guía</th>
+								 <th scope="col" class="text-left">Estatus</th>
+    						</tr>
+  					</thead>
+  					<tbody>
+   							 <tr>
+      								<td class="text-left">000-000000-00</td>
+      								<td class="text-left">00/00/00</td>
+      								<td class="text-left">Mi casa</td>
+      								<td class="text-left">000 pts</td>
+								 	<td class="text-left"><a href="#">0-0000000000</a></td>
+								 	<td class="text-left">Solicitado</td>
+    						</tr>
+    						<tr>
+      							<td class="text-left">000-000000-00</td>
+      								<td class="text-left">00/00/00</td>
+      								<td class="text-left">Casa abuela</td>
+      								<td class="text-left">000 pts</td>
+								 	<td class="text-left"><a href="#">0-0000000000</a></td>
+								 	<td class="text-left color_naranja">Enviado</td>
+								
+    						</tr>
+    						<tr>
+     							 <td class="text-left">000-000000-00</td>
+      								<td class="text-left">00/00/00</td>
+      								<td class="text-left">Mi negocio</td>
+      								<td class="text-left">000 pts</td>
+								 	<td class="text-left"><a href="#">0-0000000000</a></td>
+								 	<td class="text-left color_verde">Entregado</td>
+    						</tr>
+						<tr>
+							
+						 <td class="text-left">000-000000-00</td>
+      								<td class="text-left">00/00/00</td>
+      								<td class="text-left">Mi casa</td>
+      								<td class="text-left">000 pts</td>
+								 	<td class="text-left"><a href="#">0-0000000000</a></td>
+								 	<td class="text-left color_verde">Entregado</td>
+						</tr>
+						
+  					</tbody>
+				</table>
+						
+						
+					</div>
+	
+				</div>
+
+        </div>
+          
+
+    <footer>
+            <div class="row">
+                <div class="col-md-12"><hr></div>
+            </div>
+            <div class="row">
+                
+                <div id="horasdeate" class="col-md-6">
+                    <ul class="footer_links">
+                        <li><p>Lunes a Viernes de 8:00 a 17:00 hrs. Llama sin costo al: 01 800-839-3235 CDMX y zona local: 1250-2307<br>
+                        correo electrónico:<a href="mailto:contacto@clubdeganadoresmayoreo.com"> contacto@clubdeganadoresmayoreo.com</a></p></li>
+						<li></li>
+						<li><p>Sitio operado y administrado por <a href="">Master Loyalty Group&reg;. Todos los derechos reservados 2018</a></p></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                </div>
+
+				<div id="termycondi" class="col-md-3 text-right">
+                    
+                    <a href="terminos_condiciones.html">Bases </a> <a href="aviso_privacidad.html">Aviso de Privacidad</a>
+                 
+                </div>
+				
+            </div>
+    </footer>
+
+
+    <div class="overlay"></div>
+
+            
+  		</div>
+	</div>
+</div>
+
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+	
+ <script>
+	
+
+   $( ".clickable-row" ).click(function(openPriorid) {
+      document.getElementById("prioridades_det").style.height = "100%";
+                $(document).ready(function(){
+                $(this).find('#prioridades_det').focus();
+});
+
+	   });
+	
+
+ </script>
+	
+	
+<script>
+
+        function closePriorid() {
+            document.getElementById("prioridades_det").style.height = "0%";
+        }
+    </script>	
+	
+ <script>
+        $("#myCarousel").swipe({
+
+          swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+            if (direction == 'left') $(this).carousel('next');
+            if (direction == 'right') $(this).carousel('prev');
+
+          },
+          allowPageScroll:"vertical"
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+
+           
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#sidebar2").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss2, .overlay2').on('click', function () {
+                $('#sidebar2').removeClass('active');
+                $('.overlay2').removeClass('active');
+            });
+
+            $('#sidebarCollapse2').on('click', function () {
+                $('#sidebar2').addClass('active');
+                $('.overlay2').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#cart").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss3, .overlay3').on('click', function () {
+                $('#cart').removeClass('active');
+                $('.overlay3').removeClass('active');
+            });
+
+            $('#sidebarCollapse3').on('click', function () {
+                $('#cart').addClass('active');
+                $('.overlay3').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+
+
+        });
+    </script>
+
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+    </script>
+
+    <script>
+        var slider2 = document.getElementById("puntos");
+        var output2 = document.getElementById("puntos_val");
+        output2.innerHTML = slider2.value;
+
+        slider2.oninput = function() {
+          output2.innerHTML = this.value;
+        }
+    </script>
+	
+	
+	
+	
+<!--	<script>
+	$(function () {
+    $('.min-chart#chart-sales').easyPieChart({
+        barColor: "#4caf50",
+        onStep: function (from, to, percent) {
+            $(this.el).find('.percent').text(Math.round(percent));
+        }
+    });
+});
+</script>-->
+
+  <!--  <script>
+        function myFunction() {
+            var x = document.getElementById("cart");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>-->
+
+   <script>
+
+        function openSearch() {
+            document.getElementById("search").style.height = "103%";
+                $(document).ready(function(){
+                $(this).find('#buscador').focus();
+            });
+        }
+
+        function closeSearch() {
+            document.getElementById("search").style.height = "0%";
+        }
+    </script>
+	
+	
+	 <script>
+
+        function openDetalladoInd() {
+            document.getElementById("detallado_ind").style.height = "103%";
+                $(document).ready(function(){
+                $(this).find('#detallado_ind').focus();
+            });
+        }
+
+        function closeDetalladoInd() {
+            document.getElementById("detallado_ind").style.height = "0%";
+        }
+    </script>
+	
+	<script>
+
+        function openDetalladoBode() {
+            document.getElementById("detallado_bode").style.height = "103%";
+                $(document).ready(function(){
+                $(this).find('#detallado_bode').focus();
+            });
+        }
+
+        function closeDetalladoBode() {
+            document.getElementById("detallado_bode").style.height = "0%";
+        }
+    </script>
+	
+	
+	<script>
+
+        function openContact() {
+            document.getElementById("contacto").style.height = "103%";
+                $(document).ready(function(){
+                $(this).find('#contacto_in').focus();
+            });
+        }
+
+        function closeContact() {
+            document.getElementById("contacto").style.height = "0%";
+        }
+    </script>
+
+</body>
+
+</html>
